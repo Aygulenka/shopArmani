@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    /* background: url('../wooden.jpg') no-repeat ; */
+    background-size: cover;
+    width: 100%;
+    color:#4D220E;
+    position: fixed; /* Делаем header фиксированным */
+    top: 0; /* Располагаем его вверху страницы */
+    z-index: 1000; /* Устанавливаем z-index для обеспечения корректного отображения поверх других элементов */
+  }
+  .logo{
+    cursor: pointer;
+  }
+
+  img {
+    max-width: 100px; /* Размер логотипа */
+    max-height: 227px;
+
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input {
+    margin: 20px;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .search-input {
+    border: 2px solid #4D220E; /* Устанавливаем цвет рамочки */
+    padding: 5px; /* Устанавливаем отступ вокруг текста внутри инпута */
+    border-radius: 3px; /* Устанавливаем скругление углов */
+    margin-left: 10px; /* Добавляем отступ слева от инпута */
+  }
+  
+  /* Опционально: добавляем стили при фокусе на инпуте */
+  .search-input:focus {
+    outline: none; /* Убираем стандартное браузерное выделение при фокусе */
+    border-color: #6D3917; /* Меняем цвет рамочки при фокусе */
+  }

@@ -1,0 +1,79 @@
+.content-container{
+    display:flex;
+    justify-content: center;
+    margin: 130px 20px 70px 20px;
+}
+.block{
+    display:block;
+}
+.divPhoto {
+
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .divPhoto.zoomed .img-product {
+    transform: scale(2.5);
+  }
+
+  .minheader {
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container {
+    margin-left: 30px; /* или другое подходящее значение отступа */
+  }
+  
+  .image-container img {
+    max-width: 100px;
+    height: auto;
+  }
+  .gray{
+    /*display:block;*/
+    color:gray;
+    margin:0;
+  }
+  .black{
+    margin-top:0
+  }
+  .price{
+    font-size: 30px;
+    margin: 10px;
+  }
+  h5{
+    font-size: 20px;;
+  }
+  .character{
+border:1px solid white;
+  }
+  h5{
+    display: flex;
+    justify-content: space-between;
+  }
+  .expandCollapse{
+    font-size: 20px;
+    color: blue;
+
+  }
+
+   .fav0rite-icon {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #777;
+    margin: 5px;
+
+  }
+  
+  .fav0rite-icon.favorited {
+    color: red; 
+  }
+  

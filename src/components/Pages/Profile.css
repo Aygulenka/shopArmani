@@ -1,0 +1,60 @@
+.profile-container {
+    padding: 20px;
+    margin-top: 80px; /* Учитываем высоту зафиксированного header */
+  }
+  
+  .profile-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-container label {
+    margin-bottom: 10px;
+  }
+  
+  .profile-container button {
+    margin-top: 10px;
+  }
+
+  .data {
+    margin-bottom: 0;
+    color:#4D220E,
+  }
+  input{
+    width:98%;
+  }
+
+  .input-container input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  
+  /* Выравниваем текст "Вход" или "Регистрация" по центру */
+  .profile-container h2 {
+    text-align: center;
+    color: #4D220E;
+  }
+
+  .profile-container {
+    padding: 20px;
+    margin-bottom: 60px;
+    min-height: calc(100vh - 124px - 60px);
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    /* align-content: space-between; */
+    /* flex-wrap: nowrap; */
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-container form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Занимать всю доступную высоту контейнера */
+  }
+  .block{
+    display:block
+  }

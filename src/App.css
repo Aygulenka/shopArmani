@@ -1,16 +1,70 @@
 .App {
   text-align: center;
+  background-color: white;
 }
-
+body {
+  overflow-y: auto; /* Разрешить вертикальную прокрутку, если содержимое не помещается */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.img-product{
+ max-height: 132px;
+  /* max-width: 250px; */ 
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  /* //min-height: 227px; */
+  /* max-width: 150px; */
+}
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+/* Search.css */
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  width: 200px; /* или любая другая ширина */
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 0;
+  margin: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-results li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background-color: #f5f5f5;
+}
+.content-container {
+  margin: 125px 20px 80px 20px; /* Добавленный margin-bottom для учета футера */
+  position: relative;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+.content-container {
+  margin: 125px 20px 60px 20px
 }
 
 .App-header {
