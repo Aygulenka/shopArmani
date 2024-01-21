@@ -1,46 +1,200 @@
+/* Styles.css */
+
+/* Общие стили для header */
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  z-index: 1000;
+}
+
+/* Стили для логотипа */
+.logo {
+  cursor: pointer;
+  max-width: 100px;
+}
+
+.logo img {
+  max-width: 100px;
+  max-height: 227px;
+}
+
+/* Стили для поиска */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  margin: 20px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 2px solid #4D220E;
+}
+
+/* Стили для мобильного меню */
+
+
+/* Стили для компьютерного меню */
+.comp-menu {
+  display: none;
+}
+
+/* Стили для контактов */
+.contacts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  width: 100%;
+  color: #4D220E;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #4D220E;
+}
+
+.menu-contact {
+  border: none;
+  background: none;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.icon-telegram {
+  color: #0088cc;
+}
+
+.icon-whatsapp {
+  color: #25d366;
+  margin-right: 50px;
+}
+
+/* Медиа запрос для мобильной версии */
+@media screen and (max-width: 900px) {
+
+  .mobile-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: white;
-    /* background: url('../wooden.jpg') no-repeat ; */
-    background-size: cover;
     width: 100%;
-    color:#4D220E;
-    position: fixed; /* Делаем header фиксированным */
-    top: 0; /* Располагаем его вверху страницы */
-    z-index: 1000; /* Устанавливаем z-index для обеспечения корректного отображения поверх других элементов */
+    color: #4D220E;
+    position: fixed;
+    top: 90px;
+    z-index: 1000;
   }
-  .logo{
-    cursor: pointer;
+  .comp-menu{
+    display:none;
   }
 
-  img {
-    max-width: 100px; /* Размер логотипа */
-    max-height: 227px;
-
+  .search-input {
+    min-width: 300px;
+    min-height: 30px;
   }
-  
-  .search {
+
+  .menu-button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .nested-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .nested-menu a {
+    padding: 12px 16px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+}
+
+/* Медиа запрос для компьютерной версии */
+@media screen and (min-width: 880px) {
+  .catalog:hover .nested-menu,
+  .customer:hover .nested-menu {
+    display: block;
+  }
+  .comp-menu {
+    display: flex;
+    justify-content: space-evenly;
     display: flex;
     align-items: center;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    color: #4D220E;
+    position: fixed;
+    top: 90px;
+    z-index: 1000;
   }
-  
-  .search input {
-    margin: 20px;
-    padding: 5px;
-    border-radius: 3px;
-  }
+
   .search-input {
-    border: 2px solid #4D220E; /* Устанавливаем цвет рамочки */
-    padding: 5px; /* Устанавливаем отступ вокруг текста внутри инпута */
-    border-radius: 3px; /* Устанавливаем скругление углов */
-    margin-left: 10px; /* Добавляем отступ слева от инпута */
+    min-width: 300px;
+    min-height: 30px;
   }
-  
-  /* Опционально: добавляем стили при фокусе на инпуте */
-  .search-input:focus {
-    outline: none; /* Убираем стандартное браузерное выделение при фокусе */
-    border-color: #6D3917; /* Меняем цвет рамочки при фокусе */
+
+  .menu-button-catalog {
+    border: 2px solid #4D220E;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 20px;
+    min-height: 43px;
+    background:none;
   }
+
+  .menu-button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .menu-cust {
+    font-size: 20px;
+    color: #4D220E;
+    margin-right: 20px;
+  }
+
+  .nested-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .nested-menu a {
+    padding: 12px 16px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  .mobile-menu{
+    display:none;
+  }
+  .faBars{
+    margin:10px;
+  }
+  .icon{
+    font-size:25px;
+    color:#4D220E;
+  }
+}
+
+/* Опционально: добавляем стили при фокусе на инпуте */
+.search-input:focus {
+  outline: none;
+  border-color: #6D3917;
+}

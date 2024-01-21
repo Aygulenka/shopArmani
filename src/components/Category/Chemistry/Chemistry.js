@@ -8,6 +8,7 @@ import Pagination from '../../Hooks/Pagination';
 import { itemInfo } from './ChemistryItemInfo';
 
 import './Chemistry.css';
+import '../../../App.css'
 
 
 const Chemistry = () => {

@@ -47,7 +47,7 @@ const Search = () => {
     <div className="search-container">
       <input
         type="text"
-        placeholder="Поиск по полному имени"
+        placeholder="Поиск по каталогу"
         value={searchQuery}
         onChange={handleSearchChange}
         className='search-input'

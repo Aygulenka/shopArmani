@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faUser, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-// ... импорт остальных компонентов и библиотек
 
 import './Footer.css';
 
@@ -31,6 +30,7 @@ const Footer = () => {
   }, [menuOpen]); // Зависимость, чтобы обновлять эффект при изменении menuOpen
   return (
     <footer className="footer">
+      <div className='mobile'>
       <div className="menu-icon" onClick={toggleMenu}>
         <FontAwesomeIcon icon={faBars} className="icon-menu" />
         {menuOpen && (
@@ -67,6 +67,7 @@ const Footer = () => {
           <FontAwesomeIcon icon={faShoppingCart} className="icon"/>
         </Link>
         <p>корзина</p>
+      </div>
       </div>
     </footer>
   );

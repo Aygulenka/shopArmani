@@ -7,6 +7,7 @@ import AddToCartButton from '../Buttons/AddToCartButton';
 import FavoriteButton from '../Buttons/FavoriteButton';
 
 import './FavoriteList.css';
+import '../../App.css'
 
 const FavoriteList = ({ itemInfo }) => {
   const { favorites } = useFavorites();

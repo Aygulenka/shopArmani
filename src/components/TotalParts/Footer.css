@@ -1,4 +1,6 @@
-.footer {
+
+@media screen and (max-width: 900px) {
+.mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -71,3 +73,11 @@
   .nested-list{
     padding-left: 20px;
   }
+}
+
+  /* Медиа запрос для компьютерной версии */
+@media screen and (min-width: 880px) {
+  .mobile{
+    display: none;
+  }
+}

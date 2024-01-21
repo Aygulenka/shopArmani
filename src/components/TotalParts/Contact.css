@@ -1,0 +1,14 @@
+.menu-contact{
+    border:none;
+    background:none;
+    font-size: 25px;
+    }
+    .icon-telegram {
+      color: #0088cc; /* Цвет для Telegram */
+      margin-left:15px;
+    }
+    
+    .icon-whatsapp {
+      color: #25d366; /* Цвет для WhatsApp */
+      margin-left:15px;
+    }

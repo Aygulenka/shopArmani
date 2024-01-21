@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import logo from '../photo/logo.jpg'
-import './Header.css'
+import { faSearch, faUser, faHeart, faShoppingCart, faBars} from '@fortawesome/free-solid-svg-icons';
+import { faTelegram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
+
+import logo from '../photo/logo.jpg';
+import './Header.css';
+import './Contact.css'
 import Search from '../Buttons/Search';
+import Contacts from '../Pages/ContactsInfo';
 
 const Header = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -17,24 +22,87 @@ const Header = () => {
 
   return (
     <header className="header">
+      {/* Компьютерная версия */}
+
+      <div className="header-menu">
+        <div className='contacts'>
+        <p>Телефон: <a href={`tel:${Contacts.phoneNumber}`}>{Contacts.phoneNumber}</a></p>
+        <button onClick={Contacts.handleTelegramClick} className='menu-contact'><FontAwesomeIcon icon={faTelegram} className="icon-telegram" /></button>
+        <button onClick={Contacts.handleWhatsAppClick}className='menu-contact'><FontAwesomeIcon icon={faWhatsapp} className="icon-whatsapp"/></button>
+        </div>
+        
+
+        <div className='comp-menu'>
       <div className="logo">
         <Link to="/">
           <img src={logo} alt="Logo" />
         </Link>
       </div>
+        <div className="catalog">
+          <button className="menu-button-catalog">
+          <FontAwesomeIcon icon={faBars} />
+           <span className='faBars'>КАТАЛОГ</span> </button>
+          <div className="nested-menu">
+            <Link to="/leather" className="nested-list">Кожа</Link>
+            <Link to="/chemistry" className="nested-list">Химия</Link>
+            <Link to="/tools" className="nested-list">Инструменты и аксессуары</Link>
+          </div>
+        </div>
+        <div className="search">
+          {/* <FontAwesomeIcon icon={faSearch} onClick={handleSearch} /> */}
+          <Search />
+        </div>
+        <div className="customer">
+          <button className="menu-button">
+          <span className='menu-cust'>Покупателям</span></button>
+          <div className="nested-menu">
+            <Link to="/special-offers">Акции</Link>
+            <Link to="/contacts">Контакты</Link>
+            <Link to="/delivery">Доставка и оплата</Link>
+            <Link to="/where-to-buy">Где купить</Link>
+          </div>
+        </div>
+
+        <div className="profile">
+          <Link to="/profile">
+            <FontAwesomeIcon icon={faUser} className="icon"/>
+          </Link>
+          {/* <p>профиль</p> */}
+        </div>
+        <div className="favorites-cart">
+          <div className="favorite-icon">
+            <Link to="/favorite">
+              <FontAwesomeIcon icon={faHeart} className="icon"/>
+            </Link>
+            {/* <p>избранное</p> */}
+          </div>
+          </div>
+          <div className="cart-icon">
+            <Link to="/cart">
+              <FontAwesomeIcon icon={faShoppingCart} className="icon"/>
+            </Link>
+            {/* <p>корзина</p> */}
+          </div>
+        </div>
+        
+      {/* Мобильная версия */}
+      <div className="mobile-menu">
+
+     <div className="logo">
+        <Link to="/">
+          <img src={logo} alt="Logo" />
+        </Link>
+       </div>
       <div className="search">
         <FontAwesomeIcon icon={faSearch} onClick={handleSearch} />
-        {/* <input
-          type="text"
-          placeholder="Поиск..."
-          value={searchTerm}
-          className="search-input"
-          onChange={(e) => setSearchTerm(e.target.value)}
-        /> */}
-        <Search />
+
+       <Search />
+       </div>
+</div>
       </div>
     </header>
   );
 }
 
 export default Header;
+
