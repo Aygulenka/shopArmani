@@ -9,6 +9,7 @@ import Profile from './components/Pages/Profile';
 import FavoriteList from './components/Pages/FavoriteList';
 import Cart from './components/Pages/Cart';
 
+
 import SpecialOffers from './components/Pages/SpecialOffers'
 import Partners from './components/Pages/Partners';
 import Contacts from './components/Pages/Contacts';
