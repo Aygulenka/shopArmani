@@ -46,6 +46,9 @@ const Footer = () => {
             <Link to="/contacts">Контакты</Link>
             <Link to="/delivery">Доставка и оплата</Link>
             <Link to="/where-to-buy">Где купить</Link>
+            <Link to="/profile">Профиль</Link>
+            <Link to="/favorite">Избранное</Link>
+            <Link to="/cart">Корзина</Link>
           </div>
         )}
         <p>меню</p>

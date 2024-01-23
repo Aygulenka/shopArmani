@@ -89,8 +89,9 @@
   }
 
   .search-input {
-    min-width: 300px;
+    min-width: 200px;
     min-height: 30px;
+    padding-right: 10px;
   }
 
   .menu-button {
@@ -119,6 +120,20 @@
   }
 }
 
+@media screen and (min-width: 500px) {
+  .search-input {
+    min-width: 300px;
+    min-height: 30px;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .search-input {
+    min-width: 400px;
+    min-height: 30px;
+    padding-right: 10px;
+  }
+}
 /* Медиа запрос для компьютерной версии */
 @media screen and (min-width: 1050px) {
   .catalog:hover .nested-menu,

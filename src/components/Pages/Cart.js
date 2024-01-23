@@ -6,7 +6,7 @@ import { useCart } from '../Hooks/CartContext';
 import FavoriteButton from '../Buttons/FavoriteButton'
 import AddToCartButton from '../Buttons/AddToCartButton';
 
-import './Cart.css';
+import './Cart1.css';
 import '../../App.css'
 
 
