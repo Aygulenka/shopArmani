@@ -25,19 +25,25 @@ const Header = () => {
       {/* Компьютерная версия */}
 
       <div className="header-menu">
-        <div className='contacts'>
-        <p>Телефон: <a href={`tel:${Contacts.phoneNumber}`}>{Contacts.phoneNumber}</a></p>
-        <button onClick={Contacts.handleTelegramClick} className='menu-contact'><FontAwesomeIcon icon={faTelegram} className="icon-telegram" /></button>
-        <button onClick={Contacts.handleWhatsAppClick}className='menu-contact'><FontAwesomeIcon icon={faWhatsapp} className="icon-whatsapp"/></button>
-        </div>
-        
-
-        <div className='comp-menu'>
-      <div className="logo">
+<div>
+<div className="logo">
         <Link to="/">
           <img src={logo} alt="Logo" />
         </Link>
       </div>
+      <div className='contacts'>
+      <p >            <Link to="/special-offers" className="customer">  Акции</Link></p>
+<p>        <Link to="/contacts" className="customer">  Контакты</Link></p>
+<p><Link to="/delivery" className="customer">  Доставка и оплата</Link></p>
+<p><Link to="/where-to-buy" className="customer">  Где купить</Link></p>
+        <p>Телефон: <a href={`tel:${Contacts.phoneNumber}`}>{Contacts.phoneNumber}</a></p>
+        <button onClick={Contacts.handleTelegramClick} className='menu-contact'><FontAwesomeIcon icon={faTelegram} className="icon-telegram" /></button>
+        <button onClick={Contacts.handleWhatsAppClick}className='menu-contact'><FontAwesomeIcon icon={faWhatsapp} className="icon-whatsapp"/></button>
+        </div>
+
+        <div className='comp-menu'>
+
+
         <div className="catalog">
           <button className="menu-button-catalog">
           <FontAwesomeIcon icon={faBars} />
@@ -52,7 +58,7 @@ const Header = () => {
           {/* <FontAwesomeIcon icon={faSearch} onClick={handleSearch} /> */}
           <Search />
         </div>
-        <div className="customer">
+        {/* <div className="customer">
           <button className="menu-button">
           <span className='menu-cust'>Покупателям</span></button>
           <div className="nested-menu">
@@ -61,7 +67,7 @@ const Header = () => {
             <Link to="/delivery">Доставка и оплата</Link>
             <Link to="/where-to-buy">Где купить</Link>
           </div>
-        </div>
+        </div> */}
 
         <div className="profile">
           <Link to="/profile">
@@ -84,7 +90,7 @@ const Header = () => {
             {/* <p>корзина</p> */}
           </div>
         </div>
-        
+      </div>  
       {/* Мобильная версия */}
       <div className="mobile-menu">
 

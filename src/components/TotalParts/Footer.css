@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
 .mobile {
     display: flex;
     justify-content: space-around;
@@ -47,7 +47,8 @@
   .profile-icon,
   .favorite-icon,
   .cart-icon,
-  .menu-icon {
+  .menu-icon,
+  .phone-icon {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -65,7 +66,8 @@
   .profile-icon p,
   .favorite-icon p,
   .cart-icon p,
-  .menu-icon p {
+  .menu-icon p,
+  .phone-icon p{
     margin: 0; /* Убираем отступы у текста под иконками */
     font-size: 14px; /* Увеличиваем размер шрифта */
   }
@@ -76,7 +78,7 @@
 }
 
   /* Медиа запрос для компьютерной версии */
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 1050px) {
   .mobile{
     display: none;
   }

@@ -1,17 +1,17 @@
-import React from 'react';
-
-
+import React, { Fragment } from 'react';
+import skin from '../../skin.jpg'
+import '../../App.css'
 const Home = () => {
-  // Здесь можно использовать состояние или получать данные с сервера
-  const products = [
-    { id: 1, name: 'Product 1', price: '$19.99', image: 'product1.jpg' },
-    // Добавь еще продуктов
-  ];
+
 
   return (
+   <div className='content-container'>
+
+
     <div className="home">
       <h2>Welcome to Our Store</h2>
-
+<img src={skin} className='photoHome'/>
+    </div>
     </div>
   );
 }

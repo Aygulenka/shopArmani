@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faUser, faHeart, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faUser, faHeart, faShoppingCart, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import './Footer.css';
 
@@ -50,6 +50,12 @@ const Footer = () => {
         )}
         <p>меню</p>
       </div>
+      <div className='phone-icon'>
+        <Link to="/contacts"> 
+        <FontAwesomeIcon icon={faPhone} className="icon"/> 
+        </Link>
+        <p>контакты</p>
+        </div>
       <div className="profile-icon">
         <Link to="/profile">
           <FontAwesomeIcon icon={faUser} className="icon"/>

@@ -1,7 +1,7 @@
-.profile-container {
+/* .profile-container {
     padding: 20px;
-    margin-top: 80px; /* Учитываем высоту зафиксированного header */
-  }
+    margin-top: 80px; /* Учитываем высоту зафиксированного header 
+  } */
   
   .profile-container form {
     display: flex;
@@ -37,9 +37,9 @@
   }
 
   .profile-container {
-    padding: 20px;
-    margin-bottom: 60px;
-    min-height: calc(100vh - 124px - 60px);
+    /* padding: 20px;
+    margin-bottom: 60px; */
+    /* min-height: calc(100vh - 124px - 60px); */
     display: flex;
     flex-direction: column;
     display: flex;
@@ -48,7 +48,7 @@
     /* flex-wrap: nowrap; */
     flex-direction: column;
     align-items: center;
-    margin: 210px 20px 60px 20px;
+    /* margin: 210px 20px 60px 20px; */
     
   }
   
