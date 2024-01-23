@@ -53,6 +53,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0; /* Убираем отступы у текста под иконками */
+    font-size: 14px; 
   }
   
   .cart-icon{
@@ -63,17 +65,52 @@
     color: #4D220E;
   }
 
-  .profile-icon p,
+  /* .profile-icon p,
   .favorite-icon p,
   .cart-icon p,
   .menu-icon p,
   .phone-icon p{
-    margin: 0; /* Убираем отступы у текста под иконками */
-    font-size: 14px; /* Увеличиваем размер шрифта */
-  }
+    margin: 0; /* Убираем отступы у текста под иконками 
+    font-size: 14px; /* Увеличиваем размер шрифта 
+  } */
   
-  .nested-list{
-    padding-left: 20px;
+
+  .menu-button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+.menu-button-catalog{
+  border: none;
+  background: none;
+}
+  .nested-menu {
+    display: none;
+    position: relative;
+  }
+
+  .nested-menu a {
+    padding: 12px 16px;
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  /* .catalog .nested-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* появляется под кнопкой "Каталог" 
+    left: 0;
+    background-color: white;
+    color: #4D220E;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    z-index: 1;
+  } */
+  
+  .catalog:hover .nested-menu {
+    display: block;
   }
 }
 

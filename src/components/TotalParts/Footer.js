@@ -36,11 +36,15 @@ const Footer = () => {
         {menuOpen && (
           <div className="menu">
             {/* Ссылки на разделы меню */}
-           <div > Категории </div>
-           <Link to="/leather" className="nested-list">Кожа</Link>
+            <div className="catalog">
+          <button className="menu-button-catalog">
+           <span className='faBars'>КАТАЛОГ</span> </button>
+          <div className="nested-menu">
+            <Link to="/leather" className="nested-list">Кожа</Link>
             <Link to="/chemistry" className="nested-list">Химия</Link>
-           <Link to="/tools" className="nested-list">Инструменты и аксессуары</Link>
-            
+            <Link to="/tools" className="nested-list">Инструменты и аксессуары</Link>
+          </div>
+        </div>
             <Link to="/special-offers">Акции</Link>
             <Link to="/partners">Партнерам</Link>
             <Link to="/contacts">Контакты</Link>
