@@ -53,15 +53,15 @@ body {
   background-color: #f5f5f5;
 }
 .content-container {
-  /* margin: 210px 20px 60px 20px; */
+ margin: 210px 20px 60px 20px; 
   position: relative;
   margin-bottom: 60px;
 }
 @media screen and (max-width: 1050px) {
-  /* .content-container {
-    margin: 130px 20px 60px 20px;
+  .content-container {
+    margin: 100px 20px 60px 20px;
     position: relative;
-  } */
+  }
 }
 .photoHome{
   max-height: 300px;

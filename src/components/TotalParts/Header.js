@@ -28,7 +28,7 @@ const Header = () => {
 <div>
 <div className="logo">
         <Link to="/">
-          <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" className='compLogo'/>
         </Link>
       </div>
       <div className='contacts'>
@@ -68,6 +68,7 @@ const Header = () => {
             <Link to="/where-to-buy">Где купить</Link>
           </div>
         </div> */}
+
 
         <div className="profile">
           <Link to="/profile">

@@ -6,9 +6,13 @@ import { useCart } from '../Hooks/CartContext';
 import FavoriteButton from '../Buttons/FavoriteButton'
 import AddToCartButton from '../Buttons/AddToCartButton';
 
+
+
+
 import './Cart1.css';
 import '../../App.css'
-
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Cart = ({ itemInfo }) => {
   const { cartes } = useCart();
@@ -65,7 +69,14 @@ const Cart = ({ itemInfo }) => {
   return (
     <div className="content-container">
       <h2 className="name">Корзина</h2>
+      <div className='cartLine'>
+        <p className="gray tovar">Товар</p>
+        <p className="gray cena">Цена</p>
+        <p className="gray kol-vo">Kоличество</p>
+        <p className="gray sum">Сумма</p>
+      </div>
       <div className="favorite-list cart-table">
+        
         {cartes.map((itemName, index) => {
           const item = itemInfo.find((item) => item.content && item.content.itemName === itemName);
           const quantity = itemQuantities[itemName] || 1;
@@ -73,18 +84,24 @@ const Cart = ({ itemInfo }) => {
           if (item && item.content) {
             return (
               <div key={index} className={`div${index + 1}`}>
+                
                 <div className="black-border">
-                  <AddToCartButton itemName={itemName} itemInfo={item.content} className="favorite-button-cart" />
-                  <FavoriteButton itemName={itemName} itemInfo={item.content} className="cart-button-cart" />
-                  
-                  {item.content.image && <img src={item.content.image} alt={itemName} className='img-product'/>}
-                  <Link to={`/layComp/${item.content.path}`}>
-                    <p>{item.content.fullName}</p>
-                  </Link>
+                <div className="cart-cell-cross">
+                 <FontAwesomeIcon icon={faTimes} onClick={() => handleRemoveItem(itemName)} className="iconCross"/>
                 </div>
-                <div className="cart-cell">
-                  <span className="gray">Цена:</span>
-                  <span className="black">{item.content.price}</span>
+                  {/* <AddToCartButton itemName={itemName} itemInfo={item.content} className="favorite-button-cart" />
+                  <FavoriteButton itemName={itemName} itemInfo={item.content} className="cart-button-cart" /> */}
+                  <div className='vmeste'>
+                  {item.content.image && <img src={item.content.image} alt={itemName} className='img-product'/>}
+                 <p className='nameProduct'>
+                  <Link to={`/layComp/${item.content.path}` }>
+                    <p>{item.content.itemName}</p>
+                  </Link>
+                  </p>
+                  </div>
+                  <div className="cart-cell">
+                 
+                  <span className="gray">{item.content.price}</span>
                 </div>
                 <div className="cart-cell quantity-input">
                   <button onClick={() => handleDecreaseQuantity(itemName)}>-</button>
@@ -98,12 +115,12 @@ const Cart = ({ itemInfo }) => {
                   <button onClick={() => handleIncreaseQuantity(itemName)}>+</button>
                 </div>
                 <div className="cart-cell">
-                  <span className="gray">Общая цена:</span>
-                  <span className="black">{(item.content.price * quantity).toFixed(2)}</span>
+
+                  <span className="gray">{(item.content.price * quantity).toFixed(2)}</span>
                 </div>
-                <div className="cart-cell">
-                  <button onClick={() => handleRemoveItem(itemName)}>Удалить</button>
                 </div>
+               
+
               </div>
             );
           }
