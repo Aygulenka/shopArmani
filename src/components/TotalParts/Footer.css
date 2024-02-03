@@ -29,7 +29,8 @@
   .menu {
     position: fixed;
     bottom: 100px;
-    left: 0;
+    top: 100px;
+    right: 30px;
     background-color: white;
     color: #4D220E;
     padding: 10px;
@@ -37,6 +38,8 @@
     border-radius: 5px;
     display: flex;
     flex-direction: column;
+    min-width: 300px;
+    z-index: 20000;
   }
   
   .icon-menu{

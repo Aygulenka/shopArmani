@@ -20,7 +20,7 @@
     margin-bottom: 0;
     color:#4D220E,
   }
-  input{
+  .input-container{
     width:250px;
   }
 
@@ -67,7 +67,7 @@
 
   @media (max-width: 1050px) {
   .profile-container {
-   margin: 0px 20px 80px 20px; 
+   margin: 100px 20px 80px 20px; 
     
   }
  } 

@@ -76,4 +76,8 @@ border:1px solid white;
   .fav0rite-icon.favorited {
     color: red; 
   }
-  
+  @media screen and (max-width: 1050px) {
+    .content-container {
+      margin: 100px 20px 60px 20px;
+      position: relative;
+    }}

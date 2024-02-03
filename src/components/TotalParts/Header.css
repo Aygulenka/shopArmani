@@ -18,10 +18,13 @@
 .search {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .search-input {
-  margin: 30px;
+  min-width: 90%;
+  margin: 10px;
   padding: 5px;
   border-radius: 3px;
   border: 2px solid #4D220E;
@@ -68,14 +71,20 @@
   color: #25d366;
   margin-right: 50px;
 }
-
+.men-logo{
+  display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
 /* Медиа запрос для мобильной версии */
 @media screen and (max-width: 1050px) {
 .contacts{
   display:none
 }
   .mobile-menu {
-    display:flex;
+    display: flex;
+    min-width: 100%;
     padding: 0px;
     background-color: white;
     width: 100%;
@@ -84,18 +93,33 @@
     top: 0;
     z-index: 1000;
     justify-content: center;
+    flex-direction: column;
+
   }
   .comp-menu{
     display:none;
   }
-  .logo { grid-area: 1 / 1 / 2 / 2; }
-  .search{ grid-area: 1 / 2 / 2 / 6; }
-  .search-input {
-    /* min-width: 200px; */
+  .men-logo{
+    width: 95%;
+  }
+  /* .logo { grid-area: 1 / 1 / 2 / 2; }
+  .search
+ {
+    min-width: 80%;
     min-height: 30px;
     padding-right: 10px;
+  } */
+  .search-container{
+    width: 90%;
   }
+  .icon-menu{
+    font-size: 40px;
+  }
+.search-input{
 
+  min-height: 30px;
+  padding-right: 10px;
+}
   .menu-button {
     border: none;
     background: none;
@@ -122,37 +146,44 @@
   }
 }
 @media screen and (max-width: 400px) {
-  .search{
+  /* .search{
     max-width: 250px;
-  }
-  .search-input {
+  } */
+  /* .search-input {
     margin: 10px;
     max-width: 180px;
     min-height: 30px;
     padding-right: 20px;
     margin-right: 20px;
-  }
+  } */
   .compLogo{
     display: none;
   }
 }
 @media screen and (max-width: 500px) {
-  .search-input {
-    min-width: 300px;
+  /* .search-input {
+    max-width:200px;
     min-height: 30px;
     padding-right: 10px;
-  }
+  } */
   .compLogo{
     display: none;
   }
 }
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .search-input {
     min-width: 400px;
     min-height: 30px;
     padding-right: 10px;
   }
 }
+@media screen and (max-width: 800px) {
+  .search-input {
+    min-width: 400px;
+    min-height: 30px;
+    padding-right: 10px;
+  }
+} */
 /* Медиа запрос для компьютерной версии */
 @media screen and (min-width: 1050px) {
   .catalog:hover .nested-menu,
@@ -237,3 +268,13 @@
   outline: none;
   border-color: #6D3917;
 }
+/* @media screen and (max-width: 1050px) and (min-width: 800px) {
+.search-input{
+  min-width: 600px;
+}
+}
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  .search-input{
+    min-width: 400px;
+  }
+  } */
