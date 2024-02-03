@@ -1,22 +1,29 @@
 
 @media screen and (max-width: 1050px) {
-.mobile {
+  /* body {
+    margin: 0;
+    padding: 0;
+  } */
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    border-top: 1px solid #ddd; /* Это добавляет границу между контентом и футером */
+  }
+  
+  .mobile {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: white;
-    /* background: url('../wooden.jpg') no-repeat ; */
-    background-size: cover;
-    color: #4D220E;
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    z-index: 1000; /* Устанавливаем z-index для обеспечения корректного отображения поверх других элементов */
+    z-index: 1000;
   }
   
   .menu {
@@ -74,7 +81,10 @@
     font-size: 14px; /* Увеличиваем размер шрифта 
   } */
   
-
+.faBars{
+  color: #4D220E;
+  font-size: 16px;
+}
   .menu-button {
     border: none;
     background: none;
@@ -89,11 +99,15 @@
     display: none;
     position: relative;
   }
-
+.menuCl{
+  padding-left: 10px;
+    font-size: 16px;
+    color: #4D220E;
+}
   .nested-menu a {
     padding: 12px 16px;
     display: block;
-    color: #333;
+    color: #4D220E;
     text-decoration: none;
   }
   /* .catalog .nested-menu {

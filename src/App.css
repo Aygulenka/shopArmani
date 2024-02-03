@@ -27,9 +27,9 @@ body {
   position: relative;
 }
 
-.search-input {
-  width: 200px; /* или любая другая ширина */
-}
+/* .search-input {
+  width: 200px; /* или любая другая ширина 
+} */
 
 .search-results {
   position: absolute;

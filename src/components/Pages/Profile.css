@@ -21,15 +21,18 @@
     color:#4D220E,
   }
   input{
-    width:98%;
+    width:250px;
   }
 
   .input-container input {
-    width: 100%;
+   min-width: 100%;
+   width:800px;
     padding: 5px;
     border-radius: 3px;
   }
-  
+  /* label{
+    width:200px;
+  } */
   /* Выравниваем текст "Вход" или "Регистрация" по центру */
   .profile-container h2 {
     text-align: center;

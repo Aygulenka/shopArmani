@@ -38,21 +38,21 @@ const Footer = () => {
             {/* Ссылки на разделы меню */}
             <div className="catalog">
           <button className="menu-button-catalog">
-           <span className='faBars'>КАТАЛОГ</span> </button>
+           <span className='faBars'>Категории</span> </button>
           <div className="nested-menu">
             <Link to="/leather" className="nested-list">Кожа</Link>
             <Link to="/chemistry" className="nested-list">Химия</Link>
             <Link to="/tools" className="nested-list">Инструменты и аксессуары</Link>
           </div>
         </div>
-            <Link to="/special-offers">Акции</Link>
-            <Link to="/partners">Партнерам</Link>
-            <Link to="/contacts">Контакты</Link>
-            <Link to="/delivery">Доставка и оплата</Link>
-            <Link to="/where-to-buy">Где купить</Link>
-            <Link to="/profile">Профиль</Link>
-            <Link to="/favorite">Избранное</Link>
-            <Link to="/cart">Корзина</Link>
+            <Link to="/special-offers" className='menuCl'>Акции</Link>
+            <Link to="/partners" className='menuCl'>Партнерам</Link>
+            <Link to="/contacts" className='menuCl'>Контакты</Link>
+            <Link to="/delivery" className='menuCl'>Доставка и оплата</Link>
+            <Link to="/where-to-buy" className='menuCl'>Где купить</Link>
+            <Link to="/profile" className='menuCl'>Профиль</Link>
+            <Link to="/favorite" className='menuCl'>Избранное</Link>
+            <Link to="/cart" className='menuCl'>Корзина</Link>
           </div>
         )}
         <p>меню</p>
