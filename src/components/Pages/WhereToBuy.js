@@ -7,7 +7,8 @@ const WhereToBuy = () => {
       <div className="content-container">
   <h2 className='text-centre'>Адреса магазинов</h2>
   
-  <h4>Москва: </h4>
+  <h4>Москва:
+     </h4>
   <p> такой-то адрес</p>
   <h4>Питер:</h4>
   <p> такой-то адрес</p>

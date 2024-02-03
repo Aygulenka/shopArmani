@@ -90,6 +90,8 @@ const Header = () => {
           </div>
         </div> */}
 
+<div className='pr-fav-car'>
+
 
         <div className="profile">
           <Link to="/profile">
@@ -110,6 +112,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faShoppingCart} className="icon"/>
             </Link>
             {/* <p>корзина</p> */}
+          </div>
           </div>
         </div>
       </div>  

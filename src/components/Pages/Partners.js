@@ -3,7 +3,9 @@ import React from 'react';
 
 const Partners = () => {
   return (
-<p>Partners</p>
+    <div className="content-container">
+    <h2 className='name'>Partners</h2>
+</div>
   
   );
 }

@@ -59,12 +59,12 @@ body {
 }
 @media screen and (max-width: 1050px) {
   .content-container {
-    margin: 100px 20px 60px 20px;
+    margin: 160px 20px 60px 20px;
     position: relative;
   }
 
   .home-container{
-    margin: 150px 20px 60px 20px; 
+    margin: 160px 20px 60px 20px; 
     overflow-x: hidden;
   }
 }

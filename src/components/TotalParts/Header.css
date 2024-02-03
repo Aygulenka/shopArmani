@@ -211,7 +211,13 @@
     min-width: 500px;
     min-height: 30px;
   }
-
+.pr-fav-car{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    min-width: 350px;
+}
   .menu-button-catalog {
     border: 2px solid #4D220E;
     padding: 10px;
@@ -220,6 +226,11 @@
     margin-right: 20px;
     min-height: 43px;
     background:none;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .menu-button {
