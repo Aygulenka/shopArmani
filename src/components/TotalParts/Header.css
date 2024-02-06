@@ -279,11 +279,12 @@
   outline: none;
   border-color: #6D3917;
 }
-/* @media screen and (max-width: 1050px) and (min-width: 800px) {
-.search-input{
-  min-width: 600px;
+ @media screen and (max-width: 500px) {
+.mobile-menu{
+  max-width:500px
 }
 }
+/*
 @media screen and (max-width: 800px) and (min-width: 500px) {
   .search-input{
     min-width: 400px;

@@ -91,6 +91,8 @@
   border-bottom: 1px solid #4D220E;
   font-size: 20px;
   width:552px;
+  margin-left: auto;
+  margin-right: auto;
  }
  .vmeste{
   display: flex;
@@ -130,7 +132,7 @@
     margin: 100px 20px 60px 20px;
     } 
  } */
-@media (max-width: 420px) {
+@media (max-width: 440px) {
 
 .cartLine{
   display:none;

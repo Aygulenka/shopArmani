@@ -1,6 +1,8 @@
+
 .App {
   text-align: center;
   background-color: white;
+  overflow-x: hidden;
 }
 body {
   overflow-y: auto; /* Разрешить вертикальную прокрутку, если содержимое не помещается */
