@@ -24,7 +24,7 @@
     padding: 5px;
     margin: 10px;
     position: relative;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     flex-wrap: nowrap;
     max-height: 200px;
     border-bottom: 1px solid #4D220E;

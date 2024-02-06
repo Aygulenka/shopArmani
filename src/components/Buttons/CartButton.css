@@ -1,16 +1,16 @@
 /* CartButton.css */
 .cart-button {
    /* border: 1px solid black; /* Цвет обводки по умолчанию */
-    padding: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    position: absolute;
-    top: 90px;
-    right: 4px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #777;
-    margin: 5px;
+   padding: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s ease-in-out;
+   position: absolute;
+   top: 90px;
+   right: 20px;
+   cursor: pointer;
+   font-size: 24px;
+   color: #777;
+   margin: 5px;
   }
   
 
